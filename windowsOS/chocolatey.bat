@@ -10,10 +10,6 @@ choco install googlechrome -y
 :: Drive
 choco install googledrive -y
 
-:: Office
-# choco install officeproplus2013 -y
-choco install office365proplus -y
-
 :::: Dev tools
 choco install wireshark -y
 choco install python -y
@@ -52,6 +48,11 @@ choco install filezilla -y
 choco install tailscale -y
 choco install greenshot -y
 #choco install jdk8 -y
+choco install winfsp -y
+
+:: Office
+# choco install officeproplus2013 -y
+choco install office365proplus -y
 
 ::: Python
 pip3 install pytest
@@ -61,4 +62,4 @@ git config --global user.name "FainiDenis"
 git config --gloabal user.email "dtf8841@rit.edu"
 
 ::: Microsoft Activation Scripts (MAS):
-@powershell irm https://massgrave.dev/get | iex
+irm https://massgrave.dev/get | iex
